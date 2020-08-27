@@ -1,0 +1,134 @@
+body {
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+/* in static fort size changing text size in body wouldn't affect
+ the size in individual elements but in dynamic like % and em the size adds up*/
+h1 {
+  font-size: 5.625em; /* 16px = 100% = 1em rem=ignore parent settings */
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF; /* check line height and font weight */
+  padding-bottom: 10px;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+a {
+  color: #11999E;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+a:hover {
+  color: #EAF6F6;
+}
+hr {
+  width: 5%;
+  border-style: dotted none none;
+  border-width: 3px;
+  color: grey;
+  margin: 100px auto;
+}
+p {
+  line-height: 2;
+}
+/* Firstly, our bottom cloud at the moment has an absolute position.
+Now in order to position it relative to something,
+one of its parents has to have its position set as */
+.top-container {
+  background-color: #EAF9FF;
+  position: relative;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+.middle_container {
+  margin: 100px 0;
+}
+.intro {
+  width:30%;
+  margin: auto;
+}
+.bottom-container {
+  padding: 50px 0 20px;
+  background-color: #66BFBF;
+  margin-top: 50px;
+}
+.fix {
+  border-color: white;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  height: 75px;
+}
+.skill-row {
+  width: 50%;
+  margin: 75px auto 75px;
+  text-align: left;
+}
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+.bottom-cloud {
+  position: absolute;
+
+}
+.code-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+.info {
+  width: 35%;
+  margin: 40px auto 60px;
+}
+.sing-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+.me-img {
+  height: 250px;
+}
+.btn {
+  font-weight: bolder;
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  text-shadow: 1px 1px 3px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cd;
+  background-image: -webkit-linear-gradient(top, #30e3cd, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cd, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cd, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cd, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cd, #2bc4ad);
+  text-decoration: none;
+}
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75em;
+  padding: 20px 0;
+}
